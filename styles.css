@@ -29,4 +29,23 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 150px;
+}
+
+.image-holder {
+  background-color: white;
+  border: none;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 100px;
+}
+
+.bookmark {
+  width: 40px;
+  height: 40px;
+}
+
+.question-text {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
