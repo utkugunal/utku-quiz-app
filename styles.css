@@ -92,9 +92,9 @@
 }
 
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  width: 100%;
+  width: auto;
   height: 50px;
   background-color: lightgray;
   z-index: 2;
