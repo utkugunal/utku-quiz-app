@@ -4,103 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Bookmarks</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="card.css" />
   </head>
-  <body></body>
-  <header></header>
 
-  <main>
-    <h1 class="title">Quiz App</h1>
-    <section class="questions">
+  <body>
+    <header>
+      <h1 class="title">Quiz App</h1>
+    </header>
 
-      <!-- 2. Question -->
-      <article class="question-card">
-        <button class="question-card__bookmark-holder">
-          <img
-            src="resources/bookmark_filled.png"
-            alt="bookmark-black"
-            class="question-card__bookmark"
-          />
-        </button>
-        <p class="question-card__question-text">
-          Which HTML tag is used to link an external CSS file to an HTML
-          document?
-        </p>
-        <button class="question-card__show-button">Show Answer</button>
-        <!-- <p class="answer-text">Answer: <link></p> !-->
-        <ul class="question-card__hashtag-list">
-          <li class="question-card__hashtag-item question-card__html-tag">#html</li>
-          <li class="question-card__hashtag-item question-card__css-tag">#css</li>
-        </ul>
-      </article>
+    <main>
+      <section class="questions">
+        <!-- 2. Question -->
+        <div class="question-card">
+          <button class="question-card__bookmark-holder">
+            <img
+              src="resources/bookmark_filled.png"
+              alt="bookmark-black"
+              class="question-card__bookmark"
+            />
+          </button>
+          <p class="question-card__question-text">
+            Which HTML tag is used to link an external CSS file to an HTML
+            document?
+          </p>
+          <button class="question-card__show-button">Show Answer</button>
+          <!-- <p class="answer-text">Answer: <link></p> !-->
+          <ul class="question-card__hashtag-list">
+            <li class="question-card__hashtag-item question-card__html-tag">
+              #html
+            </li>
+            <li class="question-card__hashtag-item question-card__css-tag">
+              #css
+            </li>
+          </ul>
+        </div>
 
-      <!-- 4. Question -->
-      <article class="question-card">
-        <button class="question-card__bookmark-holder">
-          <img
-          src="resources/bookmark_filled.png"
-          alt="bookmark-black"
-          class="question-card__bookmark"
-          />
-        </button>
-        <p class="question-card__question-text">
-          Which CSS property is used to change the text color of an element?
-        </p>
-        <button class="question-card__show-button">Show Answer</button> 
-        <!-- <p class="answer-text">Answer: color</p> !-->
-        <ul class="question-card__hashtag-list">
-          <li class="question-card__hashtag-item question-card__css-tag">#css</li>
-        </ul>
-      </article>
-    
-      <!-- 6. Question -->
-      <article class="question-card">
-        <button class="question-card__bookmark-holder">
-          <img
-          src="resources/bookmark_filled.png"
-          alt="bookmark-black"
-          class="question-card__bookmark"
-          />
-        </button>
-        <p class="question-card__question-text">
-          How can you center an element horizontally in CSS?
-        </p>
-        <button class="question-card__show-button">Show Answer</button>
-        <!-- <p class="answer-text">Answer: By setting its margin property to auto.</p> !-->
-        <ul class="question-card__hashtag-list">
-          <li class="question-card__hashtag-item question-card__css-tag">#css</li>
-        </ul>
-      </article>
-    
-      </article>
-    </section>
-  </main>
+        <!-- 4. Question -->
+        <div class="question-card">
+          <button class="question-card__bookmark-holder">
+            <img
+              src="resources/bookmark_filled.png"
+              alt="bookmark-black"
+              class="question-card__bookmark"
+            />
+          </button>
+          <p class="question-card__question-text">
+            Which CSS property is used to change the text color of an element?
+          </p>
+          <button class="question-card__show-button">Show Answer</button>
+          <!-- <p class="answer-text">Answer: color</p> !-->
+          <ul class="question-card__hashtag-list">
+            <li class="question-card__hashtag-item question-card__css-tag">
+              #css
+            </li>
+          </ul>
+        </div>
 
-  <footer>
-    <div class="icon-container">
-      <a href="index.html">
+        <!-- 6. Question -->
+        <div class="question-card">
+          <button class="question-card__bookmark-holder">
+            <img
+              src="resources/bookmark_filled.png"
+              alt="bookmark-black"
+              class="question-card__bookmark"
+            />
+          </button>
+          <p class="question-card__question-text">
+            How can you center an element horizontally in CSS?
+          </p>
+          <button class="question-card__show-button">Show Answer</button>
+          <!-- <p class="answer-text">Answer: By setting its margin property to auto.</p> !-->
+          <ul class="question-card__hashtag-list">
+            <li class="question-card__hashtag-item question-card__css-tag">
+              #css
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="icon-container" href="index.html">
         <img
           src="resources/home.png"
           alt="home-transparent"
           class="icon-container__bottom-icon"
         />
       </a>
-    </div>
-    <div class="icon-container">
-      <a href="bookmarks.html">
+
+      <a class="icon-container" href="bookmarks.html">
         <img
           src="resources/bookmark_filled.png"
-          alt="bookmark-black"
+          alt="bookmark-filled"
           class="icon-container__bottom-icon"
         />
       </a>
-    </div>
-    <div class="icon-container">
-      <img
-        src="resources/profile.png"
-        alt="profile-transparent"
-        class="icon-container__bottom-icon"
-      />
-    </div>
-  </footer>
+
+      <a class="icon-container" href="profile.html">
+        <img
+          src="resources/profile.png"
+          alt="profile-transparent"
+          class="icon-container__bottom-icon"
+        />
+      </a>
+    </footer>
+  </body>
 </html>
