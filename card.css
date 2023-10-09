@@ -1,20 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.title {
-  padding: 5px;
-  text-align: center;
-  position: sticky;
-  top: 0px;
-  width: auto;
-  height: 50px;
-  background-color: lightgray;
-  z-index: 2;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+@import "global.css";
 
 .question-card {
   border: solid 2px black;
@@ -23,14 +7,6 @@
   min-height: 250px;
   text-align: center;
   margin: 20px;
-}
-
-.questions {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
 }
 
 .question-card__hashtag-list {
@@ -89,32 +65,4 @@
   height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-}
-
-footer {
-  position: sticky;
-  bottom: 0;
-  width: auto;
-  height: 50px;
-  background-color: lightgray;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.icon-container__bottom-icon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 0px;
-  z-index: 2;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: lightgray;
-}
-
-.icon-container {
-  width: auto;
-  height: 50px;
 }
