@@ -1,1 +1,6 @@
 @import "global.css";
+
+.info {
+  margin: 200px;
+  text-align: center;
+}

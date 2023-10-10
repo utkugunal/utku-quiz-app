@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Homepage</title>
     <link rel="stylesheet" href="card.css" />
+    <script src="js/index.js" defer></script>
   </head>
 
   <body>
@@ -16,16 +17,24 @@
       <section class="questions">
         <!-- 1. Question -->
         <div class="question-card">
-          <button class="question-card__bookmark-holder">
+          <button
+            class="question-card__bookmark-holder"
+            data-js="bookmark-toggle"
+          >
             <img
               src="resources/bookmark.png"
               alt="bookmark-white"
               class="question-card__bookmark"
+              data-js="bookmark-white"
             />
           </button>
           <p class="question-card__question-text">What does CSS stand for?</p>
-          <button class="question-card__show-button">Show Answer</button>
-          <!-- <p class="answer-text">Answer: Cascading Style Sheets</p> !-->
+          <button class="question-card__show-button" data-js="answer-toggle">
+            Show Answer
+          </button>
+          <p class="question-card__answer-text hidden" data-js="answer-text">
+            Cascading Style Sheets
+          </p>
           <ul class="question-card__hashtag-list">
             <li class="question-card__hashtag-item question-card__css-tag">
               #css
