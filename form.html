@@ -20,7 +20,14 @@
             id="add-question"
             cols="30"
             rows="8"
+            maxlength="150"
+            required
+            data-js="add-question"
           ></textarea>
+          <p class="counter-text">
+            <span data-js="remaining-characters-question">150</span>
+            characters left
+          </p>
         </fieldset>
         <fieldset class="form-field">
           <label for="add-answer">Your answer:</label>
@@ -29,7 +36,15 @@
             id="add-answer"
             cols="30"
             rows="8"
+            maxlength="150"
+            required
+            data-js="add-answer"
           ></textarea>
+
+          <p class="counter-text">
+            <span data-js="remaining-characters-answer">150</span>
+            characters left
+          </p>
         </fieldset>
         <fieldset class="form-field">
           <label for="add-tag">Tag:</label>
@@ -39,6 +54,8 @@
             id="add-tag"
             size="37"
             autocomplete="off"
+            maxlength="15"
+            required
           />
         </fieldset>
         <fieldset class="form-field">

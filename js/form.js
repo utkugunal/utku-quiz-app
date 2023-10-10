@@ -1,5 +1,23 @@
 const form = document.querySelector('[data-js="form"]');
 
+// Code for the counter
+
+const textareaQuestion = document.querySelector('[data-js="add-question"]');
+const counterQuestion = document.querySelector(
+  '[data-js="remaining-characters-question"]'
+);
+textareaQuestion.addEventListener("input", (event1) => {
+  counterQuestion.textContent = 150 - event1.target.value.length;
+});
+
+const textareaAnswer = document.querySelector('[data-js="add-answer"]');
+const counterAnswer = document.querySelector(
+  '[data-js="remaining-characters-answer"]'
+);
+textareaAnswer.addEventListener("input", (event2) => {
+  counterAnswer.textContent = 150 - event2.target.value.length;
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
