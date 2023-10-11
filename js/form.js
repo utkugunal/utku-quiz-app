@@ -65,6 +65,9 @@ form.addEventListener("submit", (event) => {
   `;
 
   // code for the state of the form after submit
+
+  counterQuestion.textContent = "150";
+  counterAnswer.textContent = "150";
   event.target.elements.addQuestion.focus();
   event.target.reset();
 });
