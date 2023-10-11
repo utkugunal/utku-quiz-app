@@ -42,18 +42,20 @@ form.addEventListener("submit", (event) => {
   <div class="question-card">
         <button
             class="question-card__bookmark-holder"
+            data-js="new-bookmark-toggle"
         >
         <img
             src="resources/bookmark.png"
             alt="bookmark-white"
             class="question-card__bookmark"
+            data-js="new-bookmark-white"
         />
         </button>
         <p class="question-card__question-text">${newQuestion}</p>
-        <button class="question-card__show-button">
+        <button class="question-card__show-button" data-js="new-answer-toggle">
         Show Answer
         </button>
-        <p class="question-card__answer-text hidden">
+        <p class="question-card__answer-text hidden" data-js="new-answer-text">
         ${newAnswer}
         </p>
         <ul class="question-card__hashtag-list">
@@ -70,4 +72,42 @@ form.addEventListener("submit", (event) => {
   counterAnswer.textContent = "150";
   event.target.elements.addQuestion.focus();
   event.target.reset();
+
+  // code for bonus 1 (adding functionality yo bookmark and answer buttons) - the code below works only for the first card added.
+  const newBookmarkToggle = document.querySelector(
+    '[data-js="new-bookmark-toggle"]'
+  );
+  const newBookmarkColor = document.querySelector(
+    '[data-js="new-bookmark-white"]'
+  );
+
+  // console.log(newBookmarkToggle);
+  let isNewFirstImage = true;
+
+  newBookmarkToggle.addEventListener("click", () => {
+    if (isNewFirstImage) {
+      newBookmarkColor.src = "resources/bookmark_filled.png";
+    } else {
+      newBookmarkColor.src = "resources/bookmark.png";
+    }
+    isNewFirstImage = !isNewFirstImage;
+  });
+
+  const newAnswerToggle = document.querySelector(
+    '[data-js="new-answer-toggle"]'
+  );
+  const newAnswerText = document.querySelector('[data-js="new-answer-text"]');
+
+  let isNewFirstState = true;
+
+  newAnswerToggle.addEventListener("click", () => {
+    if (isNewFirstState) {
+      newAnswerToggle.textContent = "Hide Answer";
+      newAnswerText.style.visibility = "visible";
+    } else {
+      newAnswerToggle.textContent = "Show Answer";
+      newAnswerText.style.visibility = "hidden";
+    }
+    isNewFirstState = !isNewFirstState;
+  });
 });
